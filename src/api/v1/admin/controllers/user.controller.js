@@ -3,7 +3,7 @@
  * @description this is a user controller file has method to authenticate user and sync with micro-services
  */
 const { handleSuccess, handleFailure } = require('../../../../utils/helpers');
-
+const USER = require('../model/user.service');
 /**
  * @description This method related to get user details with pagination
  * @param {object} req HttpRequest Object
@@ -11,7 +11,8 @@ const { handleSuccess, handleFailure } = require('../../../../utils/helpers');
  */
 exports.getUserList = async (req, res) => {
 	try {
-		handleSuccess(res, req.body);
+		const userData = await USER.getUserData();
+		handleSuccess(res, userData);
 	} catch (error) {
 		handleFailure(res, 500, error);
 	}

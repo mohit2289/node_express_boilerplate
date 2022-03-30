@@ -36,7 +36,8 @@
           "disallowPrototype": true,
           "singleReturnOnly": false
         }
-      ]
+      ],
+      "valid-typeof": 0
     }
   }
   

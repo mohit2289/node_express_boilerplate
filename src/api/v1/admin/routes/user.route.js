@@ -12,7 +12,7 @@ const {
 } = require('../../../../middlewares/auth');
 const valid = require('../validations/user.validation');
 
-router.get('/', authorize, userController.getUserList);
+router.get('/', userController.getUserList);
 router.post('/', authorize, valid.addUser, permission, userController.addUser);
 router.put(
 	'/',

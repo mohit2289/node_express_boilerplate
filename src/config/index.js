@@ -1,6 +1,6 @@
 const local = {
 	port: 8080,
-	app: 'Half Price Bazaar Backend',
+	app: 'Node Express Boiler Plate Backend',
 	// eslint-disable-next-line
 	env: process.env.NODE_ENV,
 	secret: 'KJBHUISH#*(YE*(#Y*(#HD*(#',

@@ -21,7 +21,7 @@ exports.login = async (req, res) => {
 		if (error.status == 400) {
 			handleFailure(res, error.status, error.data.message);
 		} else {
-			handleFailure(res, 500, error); 
+			handleFailure(res, 500, error);
 		}
 	}
 };
